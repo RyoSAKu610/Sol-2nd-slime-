@@ -1,0 +1,6 @@
+deap==1.4.4
+numpy==2.5.3
+cffi==2.1.1
+moocore==0.3.2
+platformdirs==4.11.8
+pycparser==3.0

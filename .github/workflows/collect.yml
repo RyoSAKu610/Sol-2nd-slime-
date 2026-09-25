@@ -1,0 +1,35 @@
+# GHA free-tier collection: single radar pass every 15 minutes.
+# PAPER only; no live trading, no external repo creation, no Secrets registration.
+# Nansen key is never set here: missing_credential path keeps free DEX collection only.
+name: collect
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  collect-once:
+    runs-on: ubuntu-latest
+    env:
+      NANSEN_API_KEY: ""
+      PYTHONUNBUFFERED: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+      - name: Single radar pass only (non-interactive once)
+        run: python3 -m radar --state .gha_state --config radar/config.gha.json once
+      - name: Build slim snapshot (<1MB, read-only, no payload)
+        run: python3 -m radar.gha_snapshot --db .gha_state/radar.sqlite3 --out slim-fragment.json --config radar/config.gha.json
+      - name: Enforce slim size limit
+        run: python3 -c "import pathlib; size=pathlib.Path('slim-fragment.json').stat().st_size; assert size < 1048576, size; print('slim bytes:', size)"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: slim-fragment
+          path: slim-fragment.json
+          retention-days: 7

@@ -1,0 +1,7 @@
+.brain/
+__pycache__/
+*.py[cod]
+.DS_Store
+.radar/
+radar/config.local.json
+.gha_state/

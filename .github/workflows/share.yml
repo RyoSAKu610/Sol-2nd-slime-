@@ -1,0 +1,50 @@
+# GHA free-tier sharing: aggregate every 6 hours into docs/ (Pages source).
+# PAPER only; intermittent series kept separate from the resident continuous series.
+# No live trading, no external repo creation, no Secrets registration/reading.
+name: share
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  aggregate-share:
+    runs-on: ubuntu-latest
+    env:
+      NANSEN_API_KEY: ""
+      PYTHONUNBUFFERED: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+      - name: Single radar pass only (non-interactive once)
+        run: python3 -m radar --state .gha_state --config radar/config.gha.json once
+      - name: Aggregate into docs/ (slim.json + index.html)
+        run: |
+          mkdir -p docs
+          python3 -m radar.gha_snapshot --db .gha_state/radar.sqlite3 --out docs/slim.json --config radar/config.gha.json
+          python3 -c "
+          import html, json, pathlib
+          slim = json.loads(pathlib.Path('docs/slim.json').read_text())
+          esc = lambda v: html.escape(str(v), quote=True)
+          rows = ''.join(f\"<tr><td>{esc(t['symbol'] or t['address'][:8])}</td><td>{t['score']}</td><td>{esc(t['price_usd'] if t['price_usd'] is not None else '未取得')}</td><td>{'取得済' if t['fresh'] else '古い / 未取得'}</td></tr>\" for t in slim['tokens'][:30])
+          notes = slim['notes']
+          doc = f'''<!doctype html><html lang=\"ja\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>Radar GHA Share (PAPER)</title><main><h1>Opportunity Radar · GHA間欠共有</h1><p>Solana / PAPER · 実売買なし · 6時間集計</p><p>生成 {esc(slim['generated_iso'])}</p><p>{esc(notes['no_guarantee'])}</p><p>{esc(notes['intermittent'])}</p><p>{esc(notes['compatibility'])}</p><table><tr><th>Token</th><th>Score</th><th>価格USD</th><th>鮮度</th></tr>{rows or '<tr><td colspan=4>候補なし（欠測を含む）</td></tr>'}</table><p>現金 \${slim['paper']['cash']} / 実現損益 \${slim['paper']['realized_pnl']} / 保有 {slim['paper']['open_count']} / 終了 {slim['paper']['closed_count']}（GHA間欠系列・常駐連続系列と互換表示しない）</p><p><a href=\"slim.json\">slim.json</a>（1MB未満・payload全文なし・WALなし）</p><p><a href=\"org.html\">15役の活動ページ</a>（6時間集計で再生成・静的HTMLのみ・外部通信なし）</p></main></html>'''
+          pathlib.Path('docs/index.html').write_text(doc)
+          "
+      - name: Generate org activity page (15 roles, static only)
+        run: python3 -m radar.org_page --slim docs/slim.json --out docs/org.html
+      - name: Enforce docs size limit
+        run: python3 -c "import pathlib; slim=pathlib.Path('docs/slim.json').stat().st_size; org=pathlib.Path('docs/org.html').stat().st_size; assert slim < 1048576, slim; assert org < 1048576, org; print('docs/slim.json bytes:', slim); print('docs/org.html bytes:', org)"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: gha-docs
+          path: docs/
+          retention-days: 14
+      # Pages publishing itself stays a manual repo setting (Deploy from docs/ on main).
+      # No auto-push to gh-pages is performed by this scaffold.
