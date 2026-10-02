@@ -18,8 +18,8 @@ jobs:
       NANSEN_API_KEY: ""
       PYTHONUNBUFFERED: "1"
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.14"
       - name: Single radar pass only (non-interactive once)
@@ -41,7 +41,7 @@ jobs:
         run: python3 -m radar.org_page --slim docs/slim.json --out docs/org.html
       - name: Enforce docs size limit
         run: python3 -c "import pathlib; slim=pathlib.Path('docs/slim.json').stat().st_size; org=pathlib.Path('docs/org.html').stat().st_size; assert slim < 1048576, slim; assert org < 1048576, org; print('docs/slim.json bytes:', slim); print('docs/org.html bytes:', org)"
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: gha-docs
           path: docs/
