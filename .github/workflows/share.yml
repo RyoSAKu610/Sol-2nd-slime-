@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   aggregate-share:
@@ -41,10 +41,25 @@ jobs:
         run: python3 -m radar.org_page --slim docs/slim.json --out docs/org.html
       - name: Enforce docs size limit
         run: python3 -c "import pathlib; slim=pathlib.Path('docs/slim.json').stat().st_size; org=pathlib.Path('docs/org.html').stat().st_size; assert slim < 1048576, slim; assert org < 1048576, org; print('docs/slim.json bytes:', slim); print('docs/org.html bytes:', org)"
+      - name: Ensure no secrets in docs/
+        run: |
+          if [ -n "${NANSEN_API_KEY:-}" ]; then echo "NANSEN_API_KEY must stay empty in share job"; exit 1; fi
+          echo "NANSEN_API_KEY empty: OK"
+          grep -riE "sk-[A-Za-z0-9]{8,}|xox[bap]-|ghp_[A-Za-z0-9]{8,}|gho_[A-Za-z0-9]{8,}|nansen.*[A-Za-z0-9]{16,}" docs/ && { echo "possible secret pattern found"; exit 1; } || echo "no secret patterns"
       - uses: actions/upload-artifact@v7
         with:
           name: gha-docs
           path: docs/
           retention-days: 14
+      - name: Commit and push docs/ if changed (GITHUB_TOKEN)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/slim.json docs/index.html docs/org.html
+          if git diff --cached --quiet; then
+            echo "No docs changes; skip push."
+            exit 0
+          fi
+          git commit -m "chore(share): update docs snapshot $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push
       # Pages publishing itself stays a manual repo setting (Deploy from docs/ on main).
-      # No auto-push to gh-pages is performed by this scaffold.
