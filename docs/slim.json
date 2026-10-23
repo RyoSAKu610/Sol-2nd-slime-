@@ -1,57 +1,17 @@
 {
   "series": "gha-slim",
-  "generated_at": 1792703338.5605574,
-  "generated_iso": "2026-10-22T21:08:58+00:00",
+  "generated_at": 1792725011.1212087,
+  "generated_iso": "2026-10-23T03:10:11+00:00",
   "tokens": [
     {
-      "address": "HKh5uh37FyRhRbDPcmPCoTcfByRLdY65RFZj9AvZpump",
-      "symbol": "BTC",
-      "score": 55,
-      "price_usd": 0.0006962,
-      "liquidity_usd": 71087.63,
-      "volume_5m_usd": 115592.9,
-      "quote_at": 1792703338.4478443,
-      "observed_at": 1792703338.447803,
-      "fresh": true,
-      "rationale": [
-        "流動性が設定下限以上",
-        "5分出来高が設定下限以上",
-        "5分買い件数が売り件数より多い"
-      ],
-      "risks": [
-        "売却可能性・保有集中・コントラクト権限は未検証",
-        "DEX価格の更新時刻は提供されず、取得時刻のみ確認"
-      ]
-    },
-    {
-      "address": "B1Y2fJW8rtirrBuUcda14pSaeiASHaGqTxQdxU8Mpump",
-      "symbol": "kimchi",
-      "score": 55,
-      "price_usd": 0.0006886,
-      "liquidity_usd": 81452.21,
-      "volume_5m_usd": 273770.69,
-      "quote_at": 1792703338.4466207,
-      "observed_at": 1792703338.4465752,
-      "fresh": true,
-      "rationale": [
-        "流動性が設定下限以上",
-        "5分出来高が設定下限以上",
-        "5分買い件数が売り件数より多い"
-      ],
-      "risks": [
-        "売却可能性・保有集中・コントラクト権限は未検証",
-        "DEX価格の更新時刻は提供されず、取得時刻のみ確認"
-      ]
-    },
-    {
-      "address": "GdXGPxzSVXabVKBAd61oPd87zsaBEzn2N5df3PSFSTNK",
-      "symbol": "Kimchi",
+      "address": "B66MyRSvU5KaP8wfUgHCNXMNHmiw4y5tFwSWq6iQpump",
+      "symbol": "stablecoin",
       "score": 40,
-      "price_usd": 9.279e-05,
-      "liquidity_usd": 27679.04,
-      "volume_5m_usd": 72239.72,
-      "quote_at": 1792703338.4489288,
-      "observed_at": 1792703338.4488888,
+      "price_usd": 3.323e-05,
+      "liquidity_usd": 14312.66,
+      "volume_5m_usd": 5598.64,
+      "quote_at": 1792725011.0075955,
+      "observed_at": 1792725011.0075572,
       "fresh": true,
       "rationale": [
         "5分出来高が設定下限以上",
@@ -65,14 +25,14 @@
       ]
     },
     {
-      "address": "6PmYGGdAgFxE4HtN3yicmhtE8qtXd49etXiUoJ9rewqe",
-      "symbol": "QRCAT",
+      "address": "Gtv7Ges2upYyJeW8Gh4QACW2J2CUnGf5LodcZBiupump",
+      "symbol": "Sherlock",
       "score": 30,
-      "price_usd": 3.249e-05,
-      "liquidity_usd": 14153.51,
-      "volume_5m_usd": 69579.2,
-      "quote_at": 1792703338.4483776,
-      "observed_at": 1792703338.4483159,
+      "price_usd": 1.981e-05,
+      "liquidity_usd": 10296.5,
+      "volume_5m_usd": 54334.5,
+      "quote_at": 1792725011.0131736,
+      "observed_at": 1792725011.0131357,
       "fresh": true,
       "rationale": [
         "5分出来高が設定下限以上",
@@ -86,14 +46,75 @@
       ]
     },
     {
-      "address": "4zBAY7wYxcTEHH3AnmJQgwWtMbMpEFk9qDiTeoPcpump",
-      "symbol": "catcha",
+      "address": "6CaTKnA3eJEisxYrS4dKGmqBPJ8apePbc65xteJhpump",
+      "symbol": "POOT",
+      "score": 30,
+      "price_usd": 0.000125,
+      "liquidity_usd": 29623.94,
+      "volume_5m_usd": 27725.75,
+      "quote_at": 1792725011.01266,
+      "observed_at": 1792725011.0126233,
+      "fresh": true,
+      "rationale": [
+        "5分出来高が設定下限以上",
+        "5分買い件数が売り件数より多い"
+      ],
+      "risks": [
+        "売却可能性・保有集中・コントラクト権限は未検証",
+        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
+        "流動性が不足または不明"
+      ]
+    },
+    {
+      "address": "FZPUHqK5WgWb4j632gBo6tAzdEow7Uipfs4VnQZgpump",
+      "symbol": "GLOOB",
+      "score": 30,
+      "price_usd": 8.656e-05,
+      "liquidity_usd": 24030.37,
+      "volume_5m_usd": 13214.89,
+      "quote_at": 1792725011.0108383,
+      "observed_at": 1792725011.0108,
+      "fresh": true,
+      "rationale": [
+        "5分出来高が設定下限以上",
+        "5分買い件数が売り件数より多い"
+      ],
+      "risks": [
+        "売却可能性・保有集中・コントラクト権限は未検証",
+        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
+        "流動性が不足または不明"
+      ]
+    },
+    {
+      "address": "PairUottr9sWf6REag62Y8xeFfrWSpL1F9zikNyqWLV",
+      "symbol": "PAIR",
       "score": 20,
-      "price_usd": 3.904e-06,
+      "price_usd": 1.069e-05,
       "liquidity_usd": null,
-      "volume_5m_usd": 2180.37,
-      "quote_at": 1792703338.4456494,
-      "observed_at": 1792703338.445607,
+      "volume_5m_usd": 1778.88,
+      "quote_at": 1792725011.013769,
+      "observed_at": 1792725011.0137286,
+      "fresh": true,
+      "rationale": [
+        "5分買い件数が売り件数より多い",
+        "5分変化率が0〜25%"
+      ],
+      "risks": [
+        "売却可能性・保有集中・コントラクト権限は未検証",
+        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
+        "流動性が不足または不明",
+        "5分出来高が不足または不明"
+      ]
+    },
+    {
+      "address": "2nEwN3ZLGWfTmG8AsRt47WDQTvc6QLP9poQVJ7a7pump",
+      "symbol": "SNOWMEI",
+      "score": 20,
+      "price_usd": 1.574e-05,
+      "liquidity_usd": null,
+      "volume_5m_usd": 4727.83,
+      "quote_at": 1792725011.0117638,
+      "observed_at": 1792725011.0117226,
       "fresh": true,
       "rationale": [
         "5分出来高が設定下限以上"
@@ -105,33 +126,14 @@
       ]
     },
     {
-      "address": "r6kHCBzzgtyq746bJdV6ZJTcZmam4bua32yzaGxpump",
-      "symbol": "MEMEMON",
+      "address": "AY4k4zvqQBvjGjQiowqh8DFyBBt11kpheMRqumQppump",
+      "symbol": "BUCKAZOIDS",
       "score": 20,
-      "price_usd": 3.738e-05,
-      "liquidity_usd": 14663.06,
-      "volume_5m_usd": 4687.45,
-      "quote_at": 1792703338.4446523,
-      "observed_at": 1792703338.4446137,
-      "fresh": true,
-      "rationale": [
-        "5分出来高が設定下限以上"
-      ],
-      "risks": [
-        "売却可能性・保有集中・コントラクト権限は未検証",
-        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
-        "流動性が不足または不明"
-      ]
-    },
-    {
-      "address": "BjVsSDQoNbxswtPLtpAr5QXZTEXQsfEQTAz7A7iipump",
-      "symbol": "262",
-      "score": 20,
-      "price_usd": 2.114e-05,
+      "price_usd": 7.264e-06,
       "liquidity_usd": null,
-      "volume_5m_usd": 1043.32,
-      "quote_at": 1792703338.4432635,
-      "observed_at": 1792703338.443221,
+      "volume_5m_usd": 182.97,
+      "quote_at": 1792725011.0057256,
+      "observed_at": 1792725011.0056665,
       "fresh": true,
       "rationale": [
         "5分買い件数が売り件数より多い",
@@ -145,14 +147,14 @@
       ]
     },
     {
-      "address": "22vNe5rfHBx3pxEj9BnFCBBzWDxKpFQQbWtz2Nk2pump",
-      "symbol": "AIO",
+      "address": "Euqou4H1X3YPCsJpfcMc984Es9cdd1uXKZFaN46gpump",
+      "symbol": "PATCH",
       "score": 20,
-      "price_usd": 1.451e-05,
+      "price_usd": 3.07e-06,
       "liquidity_usd": null,
-      "volume_5m_usd": 5.92,
-      "quote_at": 1792703338.4426496,
-      "observed_at": 1792703338.442607,
+      "volume_5m_usd": 0.75,
+      "quote_at": 1792725011.0043426,
+      "observed_at": 1792725011.0042992,
       "fresh": true,
       "rationale": [
         "5分買い件数が売り件数より多い",
@@ -166,14 +168,14 @@
       ]
     },
     {
-      "address": "5wgCSXNnH5W9XAGPMbBFvhy96n9YydrwQXa1tAyJpump",
-      "symbol": "SKYNET",
+      "address": "4SUtyjYDkGGHVA68wqeNNSDv9UGirdXCfpdGHPUCpump",
+      "symbol": "MCNUGGET",
       "score": 20,
-      "price_usd": 9.132e-06,
-      "liquidity_usd": 6499.95,
-      "volume_5m_usd": 525.58,
-      "quote_at": 1792703338.4401693,
-      "observed_at": 1792703338.4401197,
+      "price_usd": 7.964e-06,
+      "liquidity_usd": 5822.21,
+      "volume_5m_usd": 79.37,
+      "quote_at": 1792725011.0038908,
+      "observed_at": 1792725011.0038507,
       "fresh": true,
       "rationale": [
         "5分買い件数が売り件数より多い",
@@ -187,34 +189,233 @@
       ]
     },
     {
-      "address": "GTKeVuYhSreBVuHUuAskuGsfvb6uPYbxiqHBMdpMpump",
-      "symbol": "INFL",
+      "address": "DwBBao2hSdjfFScgycvhXQqMuWaG7njrPhXRgQ5qpump",
+      "symbol": "CABAL",
       "score": 10,
-      "price_usd": 2.028e-06,
-      "liquidity_usd": 2086.11,
-      "volume_5m_usd": 0.5,
-      "quote_at": 1792703338.4442189,
-      "observed_at": 1792703338.44418,
+      "price_usd": 8.559e-07,
+      "liquidity_usd": 443.71,
+      "volume_5m_usd": 37.85,
+      "quote_at": 1792725011.0034459,
+      "observed_at": 1792725011.003406,
       "fresh": true,
       "rationale": [
-        "5分変化率が0〜25%"
+        "5分買い件数が売り件数より多い"
       ],
       "risks": [
         "売却可能性・保有集中・コントラクト権限は未検証",
         "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
         "流動性が不足または不明",
+        "5分出来高が不足または不明",
+        "5分変化率が25%超、急変"
+      ]
+    },
+    {
+      "address": "DNEjwrkVuVoSuviBjkZ4jkQtr8tFpNnC6Rbay85Lpump",
+      "symbol": "SI",
+      "score": 0,
+      "price_usd": 3.117e-06,
+      "liquidity_usd": null,
+      "volume_5m_usd": 20.21,
+      "quote_at": 1792725011.012207,
+      "observed_at": 1792725011.0121672,
+      "fresh": true,
+      "rationale": [],
+      "risks": [
+        "売却可能性・保有集中・コントラクト権限は未検証",
+        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
+        "流動性が不足または不明",
         "5分出来高が不足または不明"
       ]
     },
     {
-      "address": "EHs8DcjX1qraz89ehTdQisagNg6qFwY2cMHNdtNWpump",
-      "symbol": "alun",
+      "address": "6kY7FoGCzKkVxf9HMfjenvy3rKn9VT9c4ZYJnzL5pump",
+      "symbol": "AI",
       "score": 0,
-      "price_usd": 3.121e-06,
+      "price_usd": 4.202e-06,
       "liquidity_usd": null,
-      "volume_5m_usd": 945.97,
-      "quote_at": 1792703338.4471955,
-      "observed_at": 1792703338.447149,
+      "volume_5m_usd": 34.29,
+      "quote_at": 1792725011.0112748,
+      "observed_at": 1792725011.0112336,
+      "fresh": true,
+      "rationale": [],
+      "risks": [
+        "売却可能性・保有集中・コントラクト権限は未検証",
+        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
+        "流動性が不足または不明",
+        "5分出来高が不足または不明"
+      ]
+    },
+    {
+      "address": "ARMXARQHNxMa2xfyFMESDja4tCahfgEDAWXS5GU1pump",
+      "symbol": "Assboy",
+      "score": 0,
+      "price_usd": 3.157e-06,
+      "liquidity_usd": null,
+      "volume_5m_usd": 1.25,
+      "quote_at": 1792725011.0103333,
+      "observed_at": 1792725011.0102923,
+      "fresh": true,
+      "rationale": [],
+      "risks": [
+        "売却可能性・保有集中・コントラクト権限は未検証",
+        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
+        "流動性が不足または不明",
+        "5分出来高が不足または不明"
+      ]
+    },
+    {
+      "address": "4LzRt3MwZmyMKihxcjsMsX7Znzhn43zKC1TzK8w5h9JB",
+      "symbol": "INU",
+      "score": 0,
+      "price_usd": 3.342e-06,
+      "liquidity_usd": null,
+      "volume_5m_usd": 16.78,
+      "quote_at": 1792725011.0097563,
+      "observed_at": 1792725011.0097156,
+      "fresh": true,
+      "rationale": [],
+      "risks": [
+        "売却可能性・保有集中・コントラクト権限は未検証",
+        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
+        "流動性が不足または不明",
+        "5分出来高が不足または不明"
+      ]
+    },
+    {
+      "address": "32jysFW2noAnZNVEXyf176SsBJJdsmN51Anjqozdpump",
+      "symbol": "salvage",
+      "score": 0,
+      "price_usd": 2.926e-06,
+      "liquidity_usd": null,
+      "volume_5m_usd": 1.23,
+      "quote_at": 1792725011.0092425,
+      "observed_at": 1792725011.0092022,
+      "fresh": true,
+      "rationale": [],
+      "risks": [
+        "売却可能性・保有集中・コントラクト権限は未検証",
+        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
+        "流動性が不足または不明",
+        "5分出来高が不足または不明"
+      ]
+    },
+    {
+      "address": "FQLeyS525xfVB78XwYVYU6ap3A1npU5WqXMw9E4Upump",
+      "symbol": "AC",
+      "score": 0,
+      "price_usd": 3.231e-06,
+      "liquidity_usd": null,
+      "volume_5m_usd": 0.0,
+      "quote_at": 1792725011.008821,
+      "observed_at": 1792725011.0087795,
+      "fresh": true,
+      "rationale": [],
+      "risks": [
+        "売却可能性・保有集中・コントラクト権限は未検証",
+        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
+        "流動性が不足または不明",
+        "5分出来高が不足または不明"
+      ]
+    },
+    {
+      "address": "2LSQcdPsYvp1jqkth71xDPYRd7VcPYJX2972nj9spump",
+      "symbol": "kimchisol",
+      "score": 0,
+      "price_usd": 3.562e-06,
+      "liquidity_usd": 3600.98,
+      "volume_5m_usd": 11.24,
+      "quote_at": 1792725011.0081294,
+      "observed_at": 1792725011.0080922,
+      "fresh": true,
+      "rationale": [],
+      "risks": [
+        "売却可能性・保有集中・コントラクト権限は未検証",
+        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
+        "流動性が不足または不明",
+        "5分出来高が不足または不明"
+      ]
+    },
+    {
+      "address": "3zoDs3JGpcvJ44h2it4ssPVEbtFTEWRsxs6Z9h2Tpump",
+      "symbol": "MEME",
+      "score": 0,
+      "price_usd": 2.939e-06,
+      "liquidity_usd": null,
+      "volume_5m_usd": 0.0,
+      "quote_at": 1792725011.0071206,
+      "observed_at": 1792725011.0070772,
+      "fresh": true,
+      "rationale": [],
+      "risks": [
+        "売却可能性・保有集中・コントラクト権限は未検証",
+        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
+        "流動性が不足または不明",
+        "5分出来高が不足または不明"
+      ]
+    },
+    {
+      "address": "GcTNbHJUW5uZYRtzPnEp2KRcpVbxbqKtw3Mzf6Zxpump",
+      "symbol": "WORLD",
+      "score": 0,
+      "price_usd": 3.161e-06,
+      "liquidity_usd": null,
+      "volume_5m_usd": 0.0,
+      "quote_at": 1792725011.0066009,
+      "observed_at": 1792725011.0065584,
+      "fresh": true,
+      "rationale": [],
+      "risks": [
+        "売却可能性・保有集中・コントラクト権限は未検証",
+        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
+        "流動性が不足または不明",
+        "5分出来高が不足または不明"
+      ]
+    },
+    {
+      "address": "HQdC8ShQU9r1ce4vfXsLTMdpFeuQn1fEvKqXWERGpump",
+      "symbol": "phpcrawler",
+      "score": 0,
+      "price_usd": 3.493e-06,
+      "liquidity_usd": null,
+      "volume_5m_usd": 3.54,
+      "quote_at": 1792725011.006148,
+      "observed_at": 1792725011.006106,
+      "fresh": true,
+      "rationale": [],
+      "risks": [
+        "売却可能性・保有集中・コントラクト権限は未検証",
+        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
+        "流動性が不足または不明",
+        "5分出来高が不足または不明"
+      ]
+    },
+    {
+      "address": "8FnhV1WE8vGMEfbzNRYbmZsRDtsVPDfbK3v6uvLppump",
+      "symbol": "HACKER",
+      "score": 0,
+      "price_usd": 6.9e-06,
+      "liquidity_usd": 5295.39,
+      "volume_5m_usd": 40.78,
+      "quote_at": 1792725011.0052078,
+      "observed_at": 1792725011.0051687,
+      "fresh": true,
+      "rationale": [],
+      "risks": [
+        "売却可能性・保有集中・コントラクト権限は未検証",
+        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
+        "流動性が不足または不明",
+        "5分出来高が不足または不明"
+      ]
+    },
+    {
+      "address": "44AxmzFVAjcjuczpKQNCqvUeGZFSswDEtj1mqaoppump",
+      "symbol": " NTWRK",
+      "score": 0,
+      "price_usd": 4.049e-06,
+      "liquidity_usd": 3633.58,
+      "volume_5m_usd": 859.96,
+      "quote_at": 1792725011.0047605,
+      "observed_at": 1792725011.0047112,
       "fresh": true,
       "rationale": [],
       "risks": [
@@ -226,50 +427,14 @@
       ]
     },
     {
-      "address": "ZSgNJrt8FSNLeF84yZbqTrKSZ8LuEUyGyXcXKeb9fjV",
-      "symbol": "rtwn",
+      "address": "9RHwrgkQgaKR7oHMdzL1c1LxSYtC2cVUnJQLKY9cpump",
+      "symbol": "UI",
       "score": 0,
-      "price_usd": 0.02587,
-      "liquidity_usd": 4747.31,
-      "volume_5m_usd": 0.0,
-      "quote_at": 1792703338.4461122,
-      "observed_at": 1792703338.4460611,
-      "fresh": true,
-      "rationale": [],
-      "risks": [
-        "売却可能性・保有集中・コントラクト権限は未検証",
-        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
-        "流動性が不足または不明",
-        "5分出来高が不足または不明"
-      ]
-    },
-    {
-      "address": "DoLPaV8VqtSxtoHprtRxsSuWjWTUvYsgF1Fcbgshpump",
-      "symbol": "O",
-      "score": 0,
-      "price_usd": 7.163e-06,
-      "liquidity_usd": null,
-      "volume_5m_usd": 68.78,
-      "quote_at": 1792703338.445163,
-      "observed_at": 1792703338.445121,
-      "fresh": true,
-      "rationale": [],
-      "risks": [
-        "売却可能性・保有集中・コントラクト権限は未検証",
-        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
-        "流動性が不足または不明",
-        "5分出来高が不足または不明"
-      ]
-    },
-    {
-      "address": "D9LYfL9d7uU4RJWoGTFF5Twxbbjt1ps7pYhNq7vppump",
-      "symbol": "ACTX",
-      "score": 0,
-      "price_usd": 2.909e-06,
+      "price_usd": 3.134e-06,
       "liquidity_usd": null,
       "volume_5m_usd": 0.0,
-      "quote_at": 1792703338.4436965,
-      "observed_at": 1792703338.4436543,
+      "quote_at": 1792725011.0029633,
+      "observed_at": 1792725011.0029104,
       "fresh": true,
       "rationale": [],
       "risks": [
@@ -280,68 +445,14 @@
       ]
     },
     {
-      "address": "26V6DpPGhXJYrSY8Tp7TvFJhUhFgLmJxZz3GY3rkpump",
-      "symbol": "ACTX",
+      "address": "uxkagpur2jRaHNvEm9YrqCLiDFAi2w1PaLFTNjRGZ5B",
+      "symbol": "aurat",
       "score": 0,
-      "price_usd": 4.673e-06,
-      "liquidity_usd": null,
-      "volume_5m_usd": 14.27,
-      "quote_at": 1792703338.4422214,
-      "observed_at": 1792703338.442179,
-      "fresh": true,
-      "rationale": [],
-      "risks": [
-        "売却可能性・保有集中・コントラクト権限は未検証",
-        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
-        "流動性が不足または不明",
-        "5分出来高が不足または不明"
-      ]
-    },
-    {
-      "address": "6fJPx1nWz6PvMifsee6AtTi4H3srtis5rHAUs3HYpump",
-      "symbol": "JASON",
-      "score": 0,
-      "price_usd": 5.54e-05,
-      "liquidity_usd": 18353.5,
-      "volume_5m_usd": 364.82,
-      "quote_at": 1792703338.4416401,
-      "observed_at": 1792703338.4415905,
-      "fresh": true,
-      "rationale": [],
-      "risks": [
-        "売却可能性・保有集中・コントラクト権限は未検証",
-        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
-        "流動性が不足または不明",
-        "5分出来高が不足または不明"
-      ]
-    },
-    {
-      "address": "fUkSnEAsbNW9pkZRFoNnCYPFRzbDuE62kK6VLdvTmZi",
-      "symbol": "BOXCAT",
-      "score": 0,
-      "price_usd": 4.567e-06,
-      "liquidity_usd": 5981.11,
-      "volume_5m_usd": 301.93,
-      "quote_at": 1792703338.4411335,
-      "observed_at": 1792703338.4410841,
-      "fresh": true,
-      "rationale": [],
-      "risks": [
-        "売却可能性・保有集中・コントラクト権限は未検証",
-        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
-        "流動性が不足または不明",
-        "5分出来高が不足または不明"
-      ]
-    },
-    {
-      "address": "Du9kbMui6rtyvLgqXRBSoriVuRM8aLhskwRbU8gXpump",
-      "symbol": "TGMB",
-      "score": 0,
-      "price_usd": 9.304e-06,
+      "price_usd": 3.739e-06,
       "liquidity_usd": null,
       "volume_5m_usd": 0.0,
-      "quote_at": 1792703338.4406838,
-      "observed_at": 1792703338.4406369,
+      "quote_at": 1792725011.0023956,
+      "observed_at": 1792725011.0023243,
       "fresh": true,
       "rationale": [],
       "risks": [
@@ -352,98 +463,7 @@
       ]
     },
     {
-      "address": "86qZLiDcKSDeWGB12abFRjYpE17z8KkGwR73WjqSpump",
-      "symbol": "Reverse",
-      "score": 0,
-      "price_usd": 5.291e-06,
-      "liquidity_usd": null,
-      "volume_5m_usd": 777.19,
-      "quote_at": 1792703338.4396713,
-      "observed_at": 1792703338.4396157,
-      "fresh": true,
-      "rationale": [],
-      "risks": [
-        "売却可能性・保有集中・コントラクト権限は未検証",
-        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
-        "流動性が不足または不明",
-        "5分出来高が不足または不明",
-        "5分変化率が25%超、急変"
-      ]
-    },
-    {
-      "address": "8pKJUWCrsBcVE1MY2wsuZJdoruKjTFWKUtuzkU6Tpump",
-      "symbol": "Kiln",
-      "score": 0,
-      "price_usd": 3.329e-06,
-      "liquidity_usd": null,
-      "volume_5m_usd": 0.0,
-      "quote_at": 1792703338.43904,
-      "observed_at": 1792703338.438985,
-      "fresh": true,
-      "rationale": [],
-      "risks": [
-        "売却可能性・保有集中・コントラクト権限は未検証",
-        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
-        "流動性が不足または不明",
-        "5分出来高が不足または不明"
-      ]
-    },
-    {
-      "address": "EGRk1fBHfRKozDW8q74LBsyh9buY8vwrJiyS7jFxpump",
-      "symbol": "BTC",
-      "score": 0,
-      "price_usd": 2.27e-06,
-      "liquidity_usd": 2390.92,
-      "volume_5m_usd": 0.01,
-      "quote_at": 1792703338.4385614,
-      "observed_at": 1792703338.4385095,
-      "fresh": true,
-      "rationale": [],
-      "risks": [
-        "売却可能性・保有集中・コントラクト権限は未検証",
-        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
-        "流動性が不足または不明",
-        "5分出来高が不足または不明"
-      ]
-    },
-    {
-      "address": "9pywQp478jUwFmKquEpCJf4jpiUXrXCTpEneP7HMpump",
-      "symbol": "PHPNULL",
-      "score": 0,
-      "price_usd": 2.933e-06,
-      "liquidity_usd": null,
-      "volume_5m_usd": 0.0,
-      "quote_at": 1792703338.4381173,
-      "observed_at": 1792703338.438052,
-      "fresh": true,
-      "rationale": [],
-      "risks": [
-        "売却可能性・保有集中・コントラクト権限は未検証",
-        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
-        "流動性が不足または不明",
-        "5分出来高が不足または不明"
-      ]
-    },
-    {
-      "address": "5VL3p8miggd7sgem27tDtSJaer6oSXmfMziVkjxipump",
-      "symbol": "VERSE",
-      "score": 0,
-      "price_usd": 2.888e-06,
-      "liquidity_usd": null,
-      "volume_5m_usd": 0.0,
-      "quote_at": 1792703338.4375505,
-      "observed_at": 1792703338.4374316,
-      "fresh": true,
-      "rationale": [],
-      "risks": [
-        "売却可能性・保有集中・コントラクト権限は未検証",
-        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
-        "流動性が不足または不明",
-        "5分出来高が不足または不明"
-      ]
-    },
-    {
-      "address": "3nyNjt55pxCePAkevhXYQZrRWbTPZd912GGutModTyHB",
+      "address": "GTZPzH1b6TGm62WbGYcCT4BhvVBhBRtYQqx7rSzwpump",
       "symbol": "",
       "score": 0,
       "price_usd": null,
@@ -469,18 +489,18 @@
     {
       "name": "dex:profiles",
       "state": "ok",
-      "last_success_iso": "2026-10-22T21:08:58+00:00",
+      "last_success_iso": "2026-10-23T03:10:10+00:00",
       "last_error": "",
       "failures": 0,
-      "count": 24
+      "count": 25
     },
     {
       "name": "dex:quotes:0",
       "state": "ok",
-      "last_success_iso": "2026-10-22T21:08:58+00:00",
+      "last_success_iso": "2026-10-23T03:10:11+00:00",
       "last_error": "",
       "failures": 0,
-      "count": 24
+      "count": 25
     },
     {
       "name": "nansen",
@@ -502,11 +522,11 @@
     "month": 1800
   },
   "counts": {
-    "tokens": 24,
+    "tokens": 25,
     "trades_open": 0,
     "trades_closed": 0,
     "feeds": 3,
-    "observation_rows": 48,
+    "observation_rows": 50,
     "memory_events": 0
   },
   "config_digest": {
