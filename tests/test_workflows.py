@@ -75,6 +75,35 @@ class WorkflowStateTests(unittest.TestCase):
                 for pattern in SECRET_PATTERNS:
                     self.assertIsNone(re.search(pattern, text), pattern)
 
+    def test_once_step_survives_transient_failure(self):
+        """A transient DEX error must not skip prune/snapshot/docs push/cache save."""
+        for path in (COLLECT, SHARE):
+            text = text_of(path)
+            with self.subTest(workflow=path.name):
+                self.assertEqual(text.count(ONCE), 1)
+                # Bound the once step, including the comment block attached above it.
+                step_start = text.rindex("\n", 0, text.index("- name: Single radar pass only")) + 1
+                start = step_start
+                while start > 0:
+                    prev = text.rindex("\n", 0, start - 1) + 1
+                    if not text[prev:start].lstrip().startswith("#"):
+                        break
+                    start = prev
+                block = text[start:text.index("\n      - ", step_start)]
+                # Declared on the same step as the once run, directly above the run line.
+                self.assertRegex(block, r"\n        continue-on-error: true\n")
+                self.assertRegex(block, r"continue-on-error: true\n\s+run: python3 -m radar ")
+                # Failure stays visible: the comment names runtime_error and the warning state.
+                self.assertIn("runtime_error", block)
+                self.assertIn("warning", block)
+                # Steps after the pass still run, and are not themselves tolerated.
+                self.assertLess(text.index(ONCE), text.index("prune_observations(5000)"))
+                self.assertLess(text.index("prune_observations(5000)"),
+                                text.index("radar.gha_snapshot"))
+                # Only the pass is tolerated; nothing downstream is blanket-suppressed.
+                self.assertEqual(
+                    len(re.findall(r"^        continue-on-error: true$", text, re.M)), 1)
+
     def test_share_keeps_write_permission_and_docs_push(self):
         text = text_of(SHARE)
         self.assertIn("contents: write", text)

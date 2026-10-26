@@ -36,7 +36,14 @@ jobs:
           path: .gha_state
           key: gha-state-${{ github.run_id }}
           restore-keys: gha-state-
+      # continue-on-error keeps the post-pass work (prune, snapshot, artifact, cache save) alive
+      # when the pass exits 1 on a transient DEX fetch error. The step still shows as a
+      # failure/warning annotation, and runtime_error is printed on stdout, so the job is
+      # marked as a warning rather than quietly passing. Nothing else is swallowed: if the
+      # state DB was never created (first run failing outright), the snapshot step below
+      # fails as it should.
       - name: Single radar pass only (non-interactive once)
+        continue-on-error: true
         run: python3 -m radar --state .gha_state --config radar/config.gha.json once
       # Bound cache growth: observations only, newest 5,000 rows. trades/tokens/feeds/kv stay.
       - name: Prune + checkpoint state before caching
