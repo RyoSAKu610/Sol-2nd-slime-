@@ -212,6 +212,13 @@ evolution/.venv/bin/python -m unittest discover -s tests -p test_evolution.py -v
 - `slim.json` は1MB未満を強制 read-only抽出。最新quote集計・trade集計・feed/credit状態のみで、observations.payload全文・ウォレット詳細・記憶本文・鍵・WAL(`-wal`/`-shm`)を含めない。
 - `.gha_state/` はGit対象外。`docs/slim.json` のみ公開用にGit管理する。
 
+### GHA cronの間引きとCloudflare Cron (実質10分起動)
+
+- GitHubの `schedule: */15` は実測で1日6回程度・実行間隔の中央値4.1時間まで間引かれ、quote鮮度20分(`quote_max_age_seconds=1200`)のGHA系列はほぼ取引ゼロになる。
+- そこで `deploy/cloudflare-worker/` のWorkerから `*/10 * * * *` で `workflow_dispatch` を送り、`collect.yml` を実質10分間隔で起動する。GitHub側のscheduleは予備として残す。
+- GitHub tokenはCloudflareのSecret `GITHUB_TOKEN` にだけ置き、リポジトリ・チャット・ログには出さない。Workerの `fetch` はトークンの有無だけを返すヘルスチェックで、認証不要。
+- 実売買・Nansenキー・常駐設定は変更しない。手順と失敗時の確認は `deploy/cloudflare-worker/README.md`。
+
 ## Nansen未設定の扱い
 
 - この構成ではAPIキーを未設定とし、Nansenは `missing_credential` 表示でHTTP未送信・credits消費0。無料DEXデータの収集だけを続ける。

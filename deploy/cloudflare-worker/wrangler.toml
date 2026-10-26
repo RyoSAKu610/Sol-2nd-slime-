@@ -1,0 +1,22 @@
+# Cloudflare Worker: dispatch collect.yml every 10 minutes.
+# PAPER only. No live trading, no Nansen key, no repository writes.
+#
+# The GitHub token is NOT stored in this file. Register it once as an encrypted
+# Cloudflare Secret:
+#   cd deploy/cloudflare-worker
+#   npx wrangler secret put GITHUB_TOKEN
+# (or Dashboard -> Worker -> Settings -> Variables and Secrets -> Add -> Secret)
+# Never put the token value in Git, chat, logs, or [vars].
+
+name = "secondary-brain-radar-cron"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+
+[vars]
+GITHUB_OWNER = "RyoSAKu610"
+GITHUB_REPO = "Sol-2nd-slime-"
+GITHUB_WORKFLOW = "collect.yml"
+GITHUB_REF = "main"
+
+[triggers]
+crons = ["*/10 * * * *"]
