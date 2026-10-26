@@ -1,6 +1,7 @@
 # GHA free-tier sharing: aggregate every 6 hours into docs/ (Pages source).
 # PAPER only; intermittent series kept separate from the resident continuous series.
 # No live trading, no external repo creation, no Secrets registration/reading.
+# State (.gha_state) is restored from the Actions cache so paper history survives between runs.
 name: share
 
 on:
@@ -11,9 +12,15 @@ on:
 permissions:
   contents: write
 
+# Same group as collect.yml: the 15-minute and 6-hour series share one cached state.
+concurrency:
+  group: gha-radar-state
+  cancel-in-progress: false
+
 jobs:
   aggregate-share:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     env:
       NANSEN_API_KEY: ""
       PYTHONUNBUFFERED: "1"
@@ -22,8 +29,33 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: "3.14"
+      # Restore before the pass; actions/cache saves .gha_state in its post-step.
+      - name: Restore GHA radar state (.gha_state)
+        uses: actions/cache@v6
+        with:
+          path: .gha_state
+          key: gha-state-${{ github.run_id }}
+          restore-keys: gha-state-
       - name: Single radar pass only (non-interactive once)
         run: python3 -m radar --state .gha_state --config radar/config.gha.json once
+      # Bound cache growth: observations only, newest 5,000 rows. trades/tokens/feeds/kv stay.
+      - name: Prune + checkpoint state before caching
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from radar.store import Store
+          s = Store(Path('.gha_state/radar.sqlite3'))
+          print('pruned_observations', s.prune_observations(5000))
+          s.close()
+          import sqlite3
+          c = sqlite3.connect('.gha_state/radar.sqlite3')
+          print('wal_checkpoint', c.execute('PRAGMA wal_checkpoint(TRUNCATE)').fetchone())
+          for table in ('observations', 'trades', 'tokens'):
+              print('rows_' + table, c.execute('SELECT COUNT(*) FROM ' + table).fetchone()[0])
+          c.close()
+          total = sum(p.stat().st_size for p in Path('.gha_state').rglob('*') if p.is_file())
+          print('gha_state_bytes', total)
+          PY
       - name: Aggregate into docs/ (slim.json + index.html)
         run: |
           mkdir -p docs
