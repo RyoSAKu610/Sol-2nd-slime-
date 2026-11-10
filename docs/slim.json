@@ -1,29 +1,8 @@
 {
   "series": "gha-slim",
-  "generated_at": 1794272843.9690015,
-  "generated_iso": "2026-11-10T01:07:23+00:00",
+  "generated_at": 1794320051.272421,
+  "generated_iso": "2026-11-10T14:14:11+00:00",
   "tokens": [
-    {
-      "address": "BAftaSb1HVqBn5723w72WLcXU7YASSgmVxQxJJAJpump",
-      "symbol": "OnlyCats",
-      "score": 65,
-      "price_usd": 0.001184,
-      "liquidity_usd": 85481.31,
-      "volume_5m_usd": 17561.95,
-      "quote_at": 1794272843.635549,
-      "observed_at": 1794272843.6355095,
-      "fresh": true,
-      "rationale": [
-        "流動性が設定下限以上",
-        "5分出来高が設定下限以上",
-        "5分買い件数が売り件数より多い",
-        "5分変化率が0〜25%"
-      ],
-      "risks": [
-        "売却可能性・保有集中・コントラクト権限は未検証",
-        "DEX価格の更新時刻は提供されず、取得時刻のみ確認"
-      ]
-    },
     {
       "address": "H2ZViwA4dwxHd3bctARCUDUqTwTqfVrbmKQMrwBmpump",
       "symbol": "BAWSAQ",
@@ -214,14 +193,14 @@
       ]
     },
     {
-      "address": "F22QdNn7VYrtTgYDHEYcqQKVtDH8msh2xs6tnGxepump",
-      "symbol": "BORLY",
+      "address": "76indaHnwAuKrK2oBpBcPsVe1jRbYHCRYDsYuJ1MVys4",
+      "symbol": "DACITYCOIN",
       "score": 55,
-      "price_usd": 0.001029,
-      "liquidity_usd": 80710.78,
-      "volume_5m_usd": 13529.63,
-      "quote_at": 1794272843.6349585,
-      "observed_at": 1794272843.6349297,
+      "price_usd": 0.000208,
+      "liquidity_usd": 100105.82,
+      "volume_5m_usd": 133181.86,
+      "quote_at": 1794320050.9503222,
+      "observed_at": 1794320050.9503052,
       "fresh": true,
       "rationale": [
         "流動性が設定下限以上",
@@ -230,7 +209,29 @@
       ],
       "risks": [
         "売却可能性・保有集中・コントラクト権限は未検証",
-        "DEX価格の更新時刻は提供されず、取得時刻のみ確認"
+        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
+        "5分変化率が25%超、急変"
+      ]
+    },
+    {
+      "address": "F22QdNn7VYrtTgYDHEYcqQKVtDH8msh2xs6tnGxepump",
+      "symbol": "BORLY",
+      "score": 55,
+      "price_usd": 0.001869,
+      "liquidity_usd": 110527.66,
+      "volume_5m_usd": 13196.01,
+      "quote_at": 1794310453.5331678,
+      "observed_at": 1794310453.5331361,
+      "fresh": false,
+      "rationale": [
+        "流動性が設定下限以上",
+        "5分出来高が設定下限以上",
+        "5分買い件数が売り件数より多い"
+      ],
+      "risks": [
+        "売却可能性・保有集中・コントラクト権限は未検証",
+        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
+        "5分変化率が25%超、急変"
       ]
     },
     {
@@ -554,6 +555,27 @@
       ]
     },
     {
+      "address": "3yjyHCC4EzLb7J7cx3uczgTrqhpXDCBkfShK8Rf3pump",
+      "symbol": "TRUMP",
+      "score": 45,
+      "price_usd": 0.001295,
+      "liquidity_usd": 1126541.08,
+      "volume_5m_usd": 9.85,
+      "quote_at": 1794320050.926216,
+      "observed_at": 1794320050.9258263,
+      "fresh": true,
+      "rationale": [
+        "流動性が設定下限以上",
+        "5分買い件数が売り件数より多い",
+        "5分変化率が0〜25%"
+      ],
+      "risks": [
+        "売却可能性・保有集中・コントラクト権限は未検証",
+        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
+        "5分出来高が不足または不明"
+      ]
+    },
+    {
       "address": "3JPqzDf4wqF8wkVR3yErsQJ9ma1wNFBC8zMR7ctCgVzi",
       "symbol": "ANT",
       "score": 45,
@@ -873,7 +895,7 @@
       "volume_5m_usd": 900.28,
       "quote_at": 1794272843.7263465,
       "observed_at": 1794272843.7263181,
-      "fresh": true,
+      "fresh": false,
       "rationale": [
         "流動性が設定下限以上",
         "5分変化率が0〜25%"
@@ -1065,14 +1087,14 @@
       ]
     },
     {
-      "address": "SuiKhqAXdSXmxtEyGMrysWs6Px9mLmFDi3fKcompump",
-      "symbol": "NVIDIOT",
+      "address": "5NmhSUzikDT8QUiAX2oSNR7RSFD1i1krmnFXwheEpump",
+      "symbol": "fofo",
       "score": 30,
-      "price_usd": 6.39e-05,
-      "liquidity_usd": 18684.45,
-      "volume_5m_usd": 15509.26,
-      "quote_at": 1794272843.639572,
-      "observed_at": 1794272843.6395445,
+      "price_usd": 2.919e-05,
+      "liquidity_usd": 11724.66,
+      "volume_5m_usd": 8094.64,
+      "quote_at": 1794320050.9499037,
+      "observed_at": 1794320050.9498825,
       "fresh": true,
       "rationale": [
         "5分出来高が設定下限以上",
@@ -1085,18 +1107,18 @@
       ]
     },
     {
-      "address": "2ECeFpEh8HC8pvumAPDJKPPpEKVLvMBtbVFAmsDHpump",
-      "symbol": "CBR",
+      "address": "BAftaSb1HVqBn5723w72WLcXU7YASSgmVxQxJJAJpump",
+      "symbol": "OnlyCats",
       "score": 30,
-      "price_usd": 5.612e-05,
-      "liquidity_usd": 19948.3,
-      "volume_5m_usd": 28244.78,
-      "quote_at": 1794272843.6384206,
-      "observed_at": 1794272843.6383927,
-      "fresh": true,
+      "price_usd": 0.0002247,
+      "liquidity_usd": 37073.54,
+      "volume_5m_usd": 6368.84,
+      "quote_at": 1794310453.533752,
+      "observed_at": 1794310453.5337217,
+      "fresh": false,
       "rationale": [
         "5分出来高が設定下限以上",
-        "5分変化率が0〜25%"
+        "5分買い件数が売り件数より多い"
       ],
       "risks": [
         "売却可能性・保有集中・コントラクト権限は未検証",
@@ -1197,26 +1219,6 @@
       "rationale": [
         "5分出来高が設定下限以上",
         "5分買い件数が売り件数より多い"
-      ],
-      "risks": [
-        "売却可能性・保有集中・コントラクト権限は未検証",
-        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
-        "流動性が不足または不明"
-      ]
-    },
-    {
-      "address": "6mXFCoZ515w37YfmwXGJMPfQfiK5tr9WkihW3oN9pump",
-      "symbol": "PIRATE",
-      "score": 30,
-      "price_usd": 0.000127,
-      "liquidity_usd": 31279.12,
-      "volume_5m_usd": 2637.36,
-      "quote_at": 1794054108.787284,
-      "observed_at": 1794054108.7872574,
-      "fresh": false,
-      "rationale": [
-        "5分出来高が設定下限以上",
-        "5分変化率が0〜25%"
       ],
       "risks": [
         "売却可能性・保有集中・コントラクト権限は未検証",
@@ -1379,26 +1381,26 @@
     {
       "name": "dex:profiles",
       "state": "ok",
-      "last_success_iso": "2026-11-10T01:07:23+00:00",
+      "last_success_iso": "2026-11-10T14:14:10+00:00",
       "last_error": "",
       "failures": 0,
-      "count": 16
+      "count": 18
     },
     {
       "name": "dex:quotes:0",
       "state": "ok",
-      "last_success_iso": "2026-11-10T01:07:23+00:00",
+      "last_success_iso": "2026-11-10T14:14:10+00:00",
       "last_error": "",
       "failures": 0,
-      "count": 27
+      "count": 29
     },
     {
       "name": "dex:quotes:1",
       "state": "ok",
-      "last_success_iso": "2026-11-10T01:07:23+00:00",
+      "last_success_iso": "2026-11-10T14:14:11+00:00",
       "last_error": "",
       "failures": 0,
-      "count": 30
+      "count": 28
     },
     {
       "name": "nansen",
@@ -1413,7 +1415,7 @@
     {
       "id": "radar:candidate:2026-11-10:BAftaSb1HVqBn5723w72WLcXU7YASSgmVxQxJJAJpump",
       "mint": "BAftaSb1HVqBn5723w72WLcXU7YASSgmVxQxJJAJpump",
-      "score": 65,
+      "score": 30,
       "at": 1794272843.7317698,
       "expires_at": 1794359243.7317698
     },
