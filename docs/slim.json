@@ -1,7 +1,7 @@
 {
   "series": "gha-slim",
-  "generated_at": 1794465851.8278003,
-  "generated_iso": "2026-11-12T06:44:11+00:00",
+  "generated_at": 1794511766.9174826,
+  "generated_iso": "2026-11-12T19:29:26+00:00",
   "tokens": [
     {
       "address": "H2ZViwA4dwxHd3bctARCUDUqTwTqfVrbmKQMrwBmpump",
@@ -193,6 +193,26 @@
       ]
     },
     {
+      "address": "4xgqefa5WcdHWKXzqvM9MRJqWYGaHVEUnpUL4Vq5pump",
+      "symbol": "HUNG",
+      "score": 55,
+      "price_usd": 0.0003976,
+      "liquidity_usd": 63531.19,
+      "volume_5m_usd": 4064.82,
+      "quote_at": 1794475585.7859457,
+      "observed_at": 1794475585.7859159,
+      "fresh": false,
+      "rationale": [
+        "流動性が設定下限以上",
+        "5分出来高が設定下限以上",
+        "5分変化率が0〜25%"
+      ],
+      "risks": [
+        "売却可能性・保有集中・コントラクト権限は未検証",
+        "DEX価格の更新時刻は提供されず、取得時刻のみ確認"
+      ]
+    },
+    {
       "address": "AJFnmpiF4VTKeqEWtwBUarib5zKKbXcs594UyrMHpump",
       "symbol": "AIB",
       "score": 55,
@@ -201,7 +221,7 @@
       "volume_5m_usd": 3919.43,
       "quote_at": 1794465851.5889719,
       "observed_at": 1794465851.5889347,
-      "fresh": true,
+      "fresh": false,
       "rationale": [
         "流動性が設定下限以上",
         "5分出来高が設定下限以上",
@@ -574,25 +594,6 @@
       ]
     },
     {
-      "address": "4xgqefa5WcdHWKXzqvM9MRJqWYGaHVEUnpUL4Vq5pump",
-      "symbol": "HUNG",
-      "score": 45,
-      "price_usd": 0.0002942,
-      "liquidity_usd": 54065.76,
-      "volume_5m_usd": 2007.38,
-      "quote_at": 1794465851.5598314,
-      "observed_at": 1794465851.5597854,
-      "fresh": true,
-      "rationale": [
-        "流動性が設定下限以上",
-        "5分出来高が設定下限以上"
-      ],
-      "risks": [
-        "売却可能性・保有集中・コントラクト権限は未検証",
-        "DEX価格の更新時刻は提供されず、取得時刻のみ確認"
-      ]
-    },
-    {
       "address": "3JPqzDf4wqF8wkVR3yErsQJ9ma1wNFBC8zMR7ctCgVzi",
       "symbol": "ANT",
       "score": 45,
@@ -736,35 +737,14 @@
       ]
     },
     {
-      "address": "HEDuqMZYBdQztyF1sj1gHz6BEFWRKVdBD87AdBfgpump",
-      "symbol": "arigato",
+      "address": "5ba8HwNgio5t86aFdWJ81w5pNHjbqAKPKejTsVoDpump",
+      "symbol": "MaxWif",
       "score": 40,
-      "price_usd": 5.667e-05,
-      "liquidity_usd": 17618.67,
-      "volume_5m_usd": 8014.32,
-      "quote_at": 1794465851.421856,
-      "observed_at": 1794465851.4218252,
-      "fresh": true,
-      "rationale": [
-        "5分出来高が設定下限以上",
-        "5分買い件数が売り件数より多い",
-        "5分変化率が0〜25%"
-      ],
-      "risks": [
-        "売却可能性・保有集中・コントラクト権限は未検証",
-        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
-        "流動性が不足または不明"
-      ]
-    },
-    {
-      "address": "3m49CXQHzwa8F4ygAWNysJCWipPxdLehEV65PFPUpump",
-      "symbol": "LSTR",
-      "score": 40,
-      "price_usd": 1.94e-05,
-      "liquidity_usd": null,
-      "volume_5m_usd": 29762.16,
-      "quote_at": 1794465851.4213874,
-      "observed_at": 1794465851.421354,
+      "price_usd": 9.125e-05,
+      "liquidity_usd": 22100.44,
+      "volume_5m_usd": 5421.55,
+      "quote_at": 1794511766.7299788,
+      "observed_at": 1794511766.7299397,
       "fresh": true,
       "rationale": [
         "5分出来高が設定下限以上",
@@ -1006,6 +986,27 @@
         "売却可能性・保有集中・コントラクト権限は未検証",
         "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
         "流動性が不足または不明"
+      ]
+    },
+    {
+      "address": "E8qaeXz7CF2auJebXaQkLZyrFPfRQft3KrGgvRvwpump",
+      "symbol": "DOGGLE",
+      "score": 35,
+      "price_usd": 0.0005659,
+      "liquidity_usd": 56837.2,
+      "volume_5m_usd": 1322.91,
+      "quote_at": 1794511766.609076,
+      "observed_at": 1794511766.6090374,
+      "fresh": true,
+      "rationale": [
+        "流動性が設定下限以上",
+        "5分買い件数が売り件数より多い"
+      ],
+      "risks": [
+        "売却可能性・保有集中・コントラクト権限は未検証",
+        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
+        "5分出来高が不足または不明",
+        "5分変化率が25%超、急変"
       ]
     },
     {
@@ -1383,15 +1384,15 @@
     {
       "name": "dex:profiles",
       "state": "ok",
-      "last_success_iso": "2026-11-12T06:44:11+00:00",
+      "last_success_iso": "2026-11-12T19:29:26+00:00",
       "last_error": "",
       "failures": 0,
-      "count": 23
+      "count": 26
     },
     {
       "name": "dex:quotes:0",
       "state": "ok",
-      "last_success_iso": "2026-11-12T06:44:11+00:00",
+      "last_success_iso": "2026-11-12T19:29:26+00:00",
       "last_error": "",
       "failures": 0,
       "count": 30
@@ -1399,7 +1400,7 @@
     {
       "name": "dex:quotes:1",
       "state": "ok",
-      "last_success_iso": "2026-11-12T06:44:11+00:00",
+      "last_success_iso": "2026-11-12T19:29:26+00:00",
       "last_error": "",
       "failures": 0,
       "count": 30
