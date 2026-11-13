@@ -1,7 +1,7 @@
 {
   "series": "gha-slim",
-  "generated_at": 1794545475.89179,
-  "generated_iso": "2026-11-13T04:51:15+00:00",
+  "generated_at": 1794577870.7490168,
+  "generated_iso": "2026-11-13T13:51:10+00:00",
   "tokens": [
     {
       "address": "FTu55MyigXns96jz4nTCDDiTCjYJjyrHSceCgG9Upump",
@@ -12,7 +12,7 @@
       "volume_5m_usd": 164130.25,
       "quote_at": 1794545475.6825485,
       "observed_at": 1794545475.68252,
-      "fresh": true,
+      "fresh": false,
       "rationale": [
         "流動性が設定下限以上",
         "5分出来高が設定下限以上",
@@ -207,6 +207,26 @@
         "5分出来高が設定下限以上",
         "5分買い件数が売り件数より多い",
         "5分変化率が0〜25%"
+      ],
+      "risks": [
+        "売却可能性・保有集中・コントラクト権限は未検証",
+        "DEX価格の更新時刻は提供されず、取得時刻のみ確認"
+      ]
+    },
+    {
+      "address": "9sFGCTjEsBk78uC2bCdxtwuUM1aartbBhe8WQXwRpump",
+      "symbol": "Sakura",
+      "score": 55,
+      "price_usd": 0.0003867,
+      "liquidity_usd": 53156.73,
+      "volume_5m_usd": 10316.33,
+      "quote_at": 1794577870.3566096,
+      "observed_at": 1794577870.3565786,
+      "fresh": true,
+      "rationale": [
+        "流動性が設定下限以上",
+        "5分出来高が設定下限以上",
+        "5分買い件数が売り件数より多い"
       ],
       "risks": [
         "売却可能性・保有集中・コントラクト権限は未検証",
@@ -755,27 +775,6 @@
         "売却可能性・保有集中・コントラクト権限は未検証",
         "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
         "5分出来高が不足または不明"
-      ]
-    },
-    {
-      "address": "9azVa2sxrvM1meRA2ixEyyYNcYMoYQYgjtjmFczUpump",
-      "symbol": "ODDME",
-      "score": 40,
-      "price_usd": 0.0001476,
-      "liquidity_usd": 28155.65,
-      "volume_5m_usd": 17040.44,
-      "quote_at": 1794545475.464039,
-      "observed_at": 1794545475.463997,
-      "fresh": true,
-      "rationale": [
-        "5分出来高が設定下限以上",
-        "5分買い件数が売り件数より多い",
-        "5分変化率が0〜25%"
-      ],
-      "risks": [
-        "売却可能性・保有集中・コントラクト権限は未検証",
-        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
-        "流動性が不足または不明"
       ]
     },
     {
@@ -1385,23 +1384,23 @@
     {
       "name": "dex:profiles",
       "state": "ok",
-      "last_success_iso": "2026-11-13T04:51:15+00:00",
+      "last_success_iso": "2026-11-13T13:51:09+00:00",
       "last_error": "",
       "failures": 0,
-      "count": 21
+      "count": 22
     },
     {
       "name": "dex:quotes:0",
       "state": "ok",
-      "last_success_iso": "2026-11-13T04:51:15+00:00",
+      "last_success_iso": "2026-11-13T13:51:10+00:00",
       "last_error": "",
       "failures": 0,
-      "count": 29
+      "count": 30
     },
     {
       "name": "dex:quotes:1",
       "state": "ok",
-      "last_success_iso": "2026-11-13T04:51:15+00:00",
+      "last_success_iso": "2026-11-13T13:51:10+00:00",
       "last_error": "",
       "failures": 0,
       "count": 29
