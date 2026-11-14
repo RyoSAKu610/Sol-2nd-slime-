@@ -1,29 +1,8 @@
 {
   "series": "gha-slim",
-  "generated_at": 1794611500.905057,
-  "generated_iso": "2026-11-13T23:11:40+00:00",
+  "generated_at": 1794631465.9665225,
+  "generated_iso": "2026-11-14T04:44:25+00:00",
   "tokens": [
-    {
-      "address": "CRwB4GxVDM4Bnh8QMqh9Nk8UZNscced3xec824vxpump",
-      "symbol": "CSI",
-      "score": 65,
-      "price_usd": 0.0007803,
-      "liquidity_usd": 65048.38,
-      "volume_5m_usd": 19576.66,
-      "quote_at": 1794611500.6240346,
-      "observed_at": 1794611500.6240067,
-      "fresh": true,
-      "rationale": [
-        "流動性が設定下限以上",
-        "5分出来高が設定下限以上",
-        "5分買い件数が売り件数より多い",
-        "5分変化率が0〜25%"
-      ],
-      "risks": [
-        "売却可能性・保有集中・コントラクト権限は未検証",
-        "DEX価格の更新時刻は提供されず、取得時刻のみ確認"
-      ]
-    },
     {
       "address": "FTu55MyigXns96jz4nTCDDiTCjYJjyrHSceCgG9Upump",
       "symbol": "FOOD",
@@ -228,6 +207,26 @@
         "5分出来高が設定下限以上",
         "5分買い件数が売り件数より多い",
         "5分変化率が0〜25%"
+      ],
+      "risks": [
+        "売却可能性・保有集中・コントラクト権限は未検証",
+        "DEX価格の更新時刻は提供されず、取得時刻のみ確認"
+      ]
+    },
+    {
+      "address": "CRwB4GxVDM4Bnh8QMqh9Nk8UZNscced3xec824vxpump",
+      "symbol": "CSI",
+      "score": 55,
+      "price_usd": 0.0005221,
+      "liquidity_usd": 53927.49,
+      "volume_5m_usd": 4742.54,
+      "quote_at": 1794631465.7270677,
+      "observed_at": 1794631465.727038,
+      "fresh": true,
+      "rationale": [
+        "流動性が設定下限以上",
+        "5分出来高が設定下限以上",
+        "5分買い件数が売り件数より多い"
       ],
       "risks": [
         "売却可能性・保有集中・コントラクト権限は未検証",
@@ -799,35 +798,14 @@
       ]
     },
     {
-      "address": "EHVpQJ76sEKqm7VvtZzW5UGg362q9B8HcpQBNps7pump",
-      "symbol": "securititty",
+      "address": "A5bpyAGdSPKwX3YDyF563DmbVSfM3EcYgBPjPna8pump",
+      "symbol": "UP",
       "score": 40,
-      "price_usd": 0.0001342,
-      "liquidity_usd": 26118.29,
-      "volume_5m_usd": 16435.13,
-      "quote_at": 1794611500.6247623,
-      "observed_at": 1794611500.6247334,
-      "fresh": true,
-      "rationale": [
-        "5分出来高が設定下限以上",
-        "5分買い件数が売り件数より多い",
-        "5分変化率が0〜25%"
-      ],
-      "risks": [
-        "売却可能性・保有集中・コントラクト権限は未検証",
-        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
-        "流動性が不足または不明"
-      ]
-    },
-    {
-      "address": "9ELbLEniMY2B8jgZ1KdwLVPgRcr1HS3wXM9HkiRDpump",
-      "symbol": "DOOMSDAY",
-      "score": 40,
-      "price_usd": 3.421e-05,
-      "liquidity_usd": 12954.61,
-      "volume_5m_usd": 2337.83,
-      "quote_at": 1794611500.6098711,
-      "observed_at": 1794611500.6097674,
+      "price_usd": 0.0001103,
+      "liquidity_usd": 24438.33,
+      "volume_5m_usd": 40404.18,
+      "quote_at": 1794631465.5821555,
+      "observed_at": 1794631465.582122,
       "fresh": true,
       "rationale": [
         "5分出来高が設定下限以上",
@@ -1231,6 +1209,26 @@
         "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
         "5分出来高が不足または不明"
       ]
+    },
+    {
+      "address": "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump",
+      "symbol": "MANIFEST",
+      "score": 35,
+      "price_usd": 0.005238,
+      "liquidity_usd": 350996.01,
+      "volume_5m_usd": 85.95,
+      "quote_at": 1793746191.9075665,
+      "observed_at": 1793746191.9075305,
+      "fresh": false,
+      "rationale": [
+        "流動性が設定下限以上",
+        "5分変化率が0〜25%"
+      ],
+      "risks": [
+        "売却可能性・保有集中・コントラクト権限は未検証",
+        "DEX価格の更新時刻は提供されず、取得時刻のみ確認",
+        "5分出来高が不足または不明"
+      ]
     }
   ],
   "paper": {
@@ -1387,15 +1385,15 @@
     {
       "name": "dex:profiles",
       "state": "ok",
-      "last_success_iso": "2026-11-13T23:11:40+00:00",
+      "last_success_iso": "2026-11-14T04:44:25+00:00",
       "last_error": "",
       "failures": 0,
-      "count": 27
+      "count": 26
     },
     {
       "name": "dex:quotes:0",
       "state": "ok",
-      "last_success_iso": "2026-11-13T23:11:40+00:00",
+      "last_success_iso": "2026-11-14T04:44:25+00:00",
       "last_error": "",
       "failures": 0,
       "count": 30
@@ -1403,10 +1401,10 @@
     {
       "name": "dex:quotes:1",
       "state": "ok",
-      "last_success_iso": "2026-11-13T23:11:40+00:00",
+      "last_success_iso": "2026-11-14T04:44:25+00:00",
       "last_error": "",
       "failures": 0,
-      "count": 29
+      "count": 30
     },
     {
       "name": "nansen",
@@ -1421,7 +1419,7 @@
     {
       "id": "radar:candidate:2026-11-13:CRwB4GxVDM4Bnh8QMqh9Nk8UZNscced3xec824vxpump",
       "mint": "CRwB4GxVDM4Bnh8QMqh9Nk8UZNscced3xec824vxpump",
-      "score": 65,
+      "score": 55,
       "at": 1794611500.7435558,
       "expires_at": 1794697900.7435558
     },
